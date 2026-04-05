@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкус Ингушетии • Национальная кухня и культура</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e63939'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🌄</span>
+                <span>Вкус Ингушетии</span>
+            </div>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link">Главная</a>
+                <a href="#about" class="nav-link">Об Ингушетии</a>
+                <a href="#cuisine" class="nav-link">Кухня</a>
+                <a href="#gallery" class="nav-link">Галерея</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </nav>
+            
+            <div class="header-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay glass"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Открывайте вкус<br>и душу Ингушетии</h1>
+            <p class="hero-subtitle">Традиционная национальная кухня • Древние башни • Гостеприимство Кавказа</p>
+            <a href="#cuisine" class="btn-primary ripple">Погрузиться в кулинарию</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Прокрутить вниз</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Об Ингушетии</h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Ингушетия — жемчужина Северного Кавказа, где величественные горы встречаются с древней культурой и искренним гостеприимством.</p>
+                    <p>Столица — молодой и современный город <strong>Магас</strong>. Здесь сохранились уникальные средневековые боевые и жилые башни, многие из которых внесены в список ЮНЕСКО как часть культурного наследия.</p>
+                    <p>Ингушский народ славится своим уважением к традициям, любовью к природе и умением принимать гостей как родных. Национальная кухня — это не просто еда, а настоящая философия жизни, передаваемая из поколения в поколение.</p>
+                    
+                    <a href="#cuisine" class="btn-secondary">Узнать о блюдах →</a>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/8692997/pexels-photo-8692997.jpeg" alt="Башни Ингушетии" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUISINE -->
+    <section id="cuisine" class="section cuisine-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Традиционные блюда Ингушетии</h2>
+                <p class="section-desc">Каждое блюдо — это история, вкус и тепло кавказского дома</p>
+            </div>
+            
+            <div class="dishes-grid" id="dishes-grid">
+                <!-- Заполняется через JS или статично -->
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Галерея</h2>
+                <p class="section-desc">Красота Ингушетии в кадрах</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.pexels.com/photos/8692997/pexels-photo-8692997.jpeg" alt="Ингушские башни"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/1015/800/600" alt="Горы Ингушетии"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/201/800/600" alt="Национальная кухня"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/237/800/600" alt="Природа Кавказа"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/1016/800/600" alt="Ингушская культура"></div>
+                <div class="gallery-item"><img src="https://picsum.photos/id/133/800/600" alt="Башни на закате"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTS / FOOTER PREVIEW -->
+    <section id="contacts" class="section contacts-section">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <p>Хотите узнать больше о кухне Ингушетии или организовать гастрономический тур? Напишите нам!</p>
+            <div class="social-links">
+                <a href="#" class="social-btn">Instagram</a>
+                <a href="#" class="social-btn">VK</a>
+                <a href="#" class="social-btn">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Вкус Ингушетии. Сделано с ❤️ к родной земле.</p>
+            <p>Все права защищены. Наслаждайтесь настоящими вкусами Кавказа.</p>
+        </div>
+    </footer>
+
+    <script>
+        // === ТЕМА ===
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Загрузка сохранённой темы
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            if (html.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+        
+        // === БУРГЕР МЕНЮ ===
+        const burger = document.getElementById('burger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        burger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            burger.classList.toggle('active');
+        });
+        
+        // Закрытие меню при клике на ссылку
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                burger.classList.remove('active');
+            });
+        });
+        
+        // === ДАННЫЕ БЛЮД ===
+        const dishes = [
+            {
+                name: "Хинкал",
+                desc: "Нежное тесто в ароматном бульоне с отварным мясом и чесночным соусом — главное блюдо кавказского стола.",
+                img: "https://picsum.photos/id/292/600/400"
+            },
+            {
+                name: "Курзе",
+                desc: "Большие ингушские пельмени с сочной начинкой из мяса, зелени и специй.",
+                img: "https://picsum.photos/id/431/600/400"
+            },
+            {
+                name: "Сискал",
+                desc: "Золотистый кукурузный хлеб, испечённый на открытом огне. Идеально дополняет любое мясное блюдо.",
+                img: "https://picsum.photos/id/201/600/400"
+            },
+            {
+                name: "Дулх-халтам",
+                desc: "Традиционное блюдо из баранины с галушками из кукурузной и пшеничной муки, подаётся с острым соусом.",
+                img: "https://picsum.photos/id/870/600/400"
+            },
+            {
+                name: "Чепалгаш",
+                desc: "Тонкие лепёшки с начинкой из творога и дикого чеснока (черемши).",
+                img: "https://picsum.photos/id/106/600/400"
+            },
+            {
+                name: "Хингалш",
+                desc: "Сладкие или солёные лепёшки с тыквенной начинкой — любимое лакомство горцев.",
+                img: "https://picsum.photos/id/133/600/400"
+            }
+        ];
+        
+        // Генерация карточек блюд
+        const dishesGrid = document.getElementById('dishes-grid');
+        
+        dishes.forEach(dish => {
+            const card = document.createElement('div');
+            card.className = 'dish-card glass';
+            card.innerHTML = `
+                <div class="dish-image">
+                    <img src="${dish.img}" alt="${dish.name}" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3>${dish.name}</h3>
+                    <p>${dish.desc}</p>
+                    <button class="btn-more ripple">Подробнее</button>
+                </div>
+            `;
+            dishesGrid.appendChild(card);
+        });
+        
+        // === ПЛАВНЫЕ АНИМАЦИИ ПРИ СКРОЛЛЕ (Intersection Observer) ===
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Наблюдаем за секциями и карточками
+        document.querySelectorAll('.section, .dish-card, .gallery-item').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+        
+        // === RIPPLE EFFECT ДЛЯ КНОПОК ===
+        function createRipple(event) {
+            const btn = event.currentTarget;
+            const ripple = document.createElement('span');
+            const rect = btn.getBoundingClientRect();
+            
+            const size = Math.max(rect.width, rect.height);
+            const x = event.clientX - rect.left - size / 2;
+            const y = event.clientY - rect.top - size / 2;
+            
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.classList.add('ripple-effect');
+            
+            btn.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        }
+        
+        document.querySelectorAll('.ripple').forEach(btn => {
+            btn.addEventListener('click', createRipple);
+        });
+        
+        // Лёгкий parallax на hero (mouse move)
+        const hero = document.querySelector('.hero');
+        hero.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth) * 15 - 7.5;
+            const y = (e.clientY / window.innerHeight) * 10 - 5;
+            hero.style.setProperty('--mouse-x', `${x}px`);
+            hero.style.setProperty('--mouse-y', `${y}px`);
+        });
+        
+        console.log('%cСайт "Вкус Ингушетии" успешно загружен ✓', 'color: #00a651; font-family: monospace;');
+    </script>
+</body>
+</html>
